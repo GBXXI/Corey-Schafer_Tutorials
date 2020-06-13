@@ -1,2 +1,15 @@
 *.xlsx
+*.log
+*.csv
+*.tsv
+*.pdf
+*.json
+*.html
+*.css
+*.txt
+*.pyc
+*.png
+*.jpg
+*.zip
+*.download
 .ipynb_checkpoints
