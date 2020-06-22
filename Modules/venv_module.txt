@@ -1,0 +1,76 @@
+
+Virtual Environments
+Built-in venv Module
+Works for version 3.4 and higher
+
+# Creating an new virtual environment:
+- Inside the folder we want to create the virtual environment
+    on the command prompt, we type:
+
+    D:\Test GB Python\Corey Schafer_Tutorials> python -m venv project_env
+
+        where:
+            - m venv: is the module name
+            - project_env: is the virtual's environment's name
+
+
+# Creating a new virtual enviroment with access to the global packages:
+- Inside the folder we want to create the virtual environment
+    on the command prompt, we type:
+
+    D:\Test GB Python\Corey Schafer_Tutorials> python -m venv project_env --system-site-packages
+
+        where:
+            - m venv: is the module name
+            - project_env: is the virtual's environment's name
+
+# Activating a virtual environment:
+- Inside the folder we want to create the virtual environment
+    on the command prompt, we type:
+
+    D:\Test GB Python\Corey Schafer_Tutorials> project_env\Scripts\activate.bat
+
+        where:
+            - project_env: is the virtual's environment's name
+            - \Scripts\activate.bat: is the bat file to activate the environment
+
+- Now the command prompt is:
+    (project_env) D:\Test GB Python\Corey Schafer_Tutorials>
+
+    With the above command prompt, anything we installl with pip, is installed
+to this enviroment only.
+
+# Extracting the enviroment's requirements.
+-Inside our virtual enviroment we give the command:
+
+    (project_env) D:\Test GB Python\Corey Schafer_Tutorials>pip freeze
+
+        copying all the modules name and version and putting them inside a
+        requirements.txt file
+
+# Deactivating the virtual enviroment:
+
+    (project_env) D:\Test GB Python\Corey Schafer_Tutorials>deactivate
+
+- Now the command prompt is:
+        D:\Test GB Python\Corey Schafer_Tutorials>
+
+# Deleting a virtual enviroment:
+-Inside the project's folder we give the command:
+
+    D:\Test GB Python\Corey Schafer_Tutorials>rmdir project_env /s
+
+        where:
+            -project_env: is our virtual enviroment's name\file
+
+# Installing packages for a virtual enviroment from requirements.txt:
+-Inside our virtual enviroment we give the command:
+
+    (project_env) D:\Test GB Python\Corey Schafer_Tutorials>pip install -r requirements.txt
+
+# Accessing our virtual enviroment's specific packages:
+-Inside our virtual enviroment we give the command:
+
+ (project_env) D:\Test GB Python\Corey Schafer_Tutorials>pip list --local
+
+ (project_env) D:\Test GB Python\Corey Schafer_Tutorials>pip freeze --local
