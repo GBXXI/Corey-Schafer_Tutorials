@@ -13,3 +13,6 @@
 *.zip
 *.download
 .ipynb_checkpoints
+.venv
+Pipfile
+Pipfile.lock
