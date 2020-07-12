@@ -18,6 +18,7 @@
 .vscode
 Libraries/Pandas/Jupyter Testing and config.ipynb 
 Modules/bs4_module(Beautiful Soup)/CoreyMS - Development, Design, DIY, and more_files/
+Modules\Unittest_module\__pycache__
 .venv
 Pipfile
 Pipfile.lock
