@@ -55,14 +55,16 @@ os.stat('renameD.txt')
 # %% markdown
 # If we want to print all the directories and the files within a path we use .walk() method. .walk() is a generator that yields a tuple of 3 values. The directory's path, the directories within that path and the files within that path. That is the reason we use this method in a 'for-loop' with 3 variables. By default this method traverses from the top-down.
 # %% codecell
-walk_gen = os.walk('D:\\Test GB Python\\Corey Schafer_Tutorials')
+walk_gen = os.walk(r"D:\GBXXI\PROGRAMMING\GB_Python\CoreySchafer_Tutorials")
 
 for dir_path, dir_names, dir_files in walk_gen:
-    print(f'''
-    Current path: {dir_path}
-    Directories: {dir_names}
-    Files: {dir_files}
-    ''')
+    print(
+        f'''
+            Current path: {dir_path}
+            Directories: {dir_names}
+            Files: {dir_files}
+        '''
+    )
 
 # %% markdown
 # Accessing enviroment variables with the .environ, method. If we want a specific path variable we use the .get attribute.

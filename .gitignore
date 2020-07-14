@@ -13,6 +13,8 @@
 *.jpg
 *.zip
 *.download
+*.jpg
+*.gif
 .ipynb_checkpoints
 # Files
 .vscode
@@ -22,3 +24,4 @@ Modules\Unittest_module\__pycache__
 .venv
 Pipfile
 Pipfile.lock
+Modules/PIL_module/Images
