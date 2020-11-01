@@ -28,7 +28,7 @@ print(emp_1.first)  # Output: Jackie
 print(emp_1.email)  # Output: John.Carter@email.com
 print(emp_1.fullname())  # Output: Jackie Carter
 
-################################################################################
+# ------------------------------------------------------------------------------
 # In order to solve the problem above, we can create a method for the email.
 # The caviat here is, that if anyone is using our code, it will break, because
 # they use the email as an attribute, not a method. So for us to compensate, we
@@ -67,7 +67,7 @@ print(emp_1.first)  # Output: Jackie
 print(emp_1.email)  # Output: Jackie.Carter@email.com
 print(emp_1.fullname())  # Output: Jackie Carter
 
-################################################################################
+# ------------------------------------------------------------------------------
 # if we had our class redesinged and we wanted also to set the fullname as an
 # attribute.
 
@@ -103,7 +103,7 @@ print(emp_1.fullname)  # Output: John Carter
 # emp_1.fullname = 'Jackie Carter'  #Output: emp_1.fullname = 'Jackie Carter'
                                   # AttributeError: can't set attribute
 
-################################################################################
+# ------------------------------------------------------------------------------
 # So, to compensate for that also we have to create a 'setter'
 
 print()
@@ -150,7 +150,7 @@ print(emp_1.fullname)  # Output: Jackie Carter
 # print(emp_1.fullname())  # Output: TypeError: 'str' object is not callable
 
 
-################################################################################
+# ------------------------------------------------------------------------------
 # If we want to delete attributes from our class, we use a deleter!
 
 print()

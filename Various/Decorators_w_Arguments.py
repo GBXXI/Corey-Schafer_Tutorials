@@ -25,7 +25,7 @@ display_info('Leia', 22)  # Output:
                           # display_info ran with arguments (Leia, 22)
                           # Executed after display_info
 
-################################################################################
+# ------------------------------------------------------------------------------
 # Now if we want to add an argument -ie prefix- to the decorator_function, we
 # have to indent one level the decorator_function and add the prefix_function
 # to the top, witch takes the argument we want.

@@ -1,5 +1,5 @@
 
-#################################CLOSURE RECAP##################################
+# --------------------------------CLOSURE RECAP---------------------------------
 print('CLOSURE RECAP')
 print()
 
@@ -36,7 +36,7 @@ print()
 bye_f = b_f('bye')
 bye_f()
 
-################################################################################
+# ------------------------------------------------------------------------------
 # Decorator is a function that takes another function as an argument adds
 # functionality and returns another function. All of this, without altering
 # the source code of the original function
@@ -60,7 +60,7 @@ decorated_display()  # Output:
             # Wrapper_function is now executing: display
             # def display(), ran
 
-################################################################################
+# ------------------------------------------------------------------------------
 # The above example can also be written as follows:
 print()
 print('DECORATORS_EXAMPLE 2')
@@ -81,7 +81,7 @@ display()  # With the decorator we get the excact output as the example above
            # just by calling the function. It is the same as writting
            # display = decorator_function(display)
 
-################################################################################
+# ------------------------------------------------------------------------------
 # The examples above would not work if we had an og_function that has arguments
 
 print()
@@ -114,7 +114,7 @@ print()
 print('Calling the function display(): ')
 display()
 
-################################################################################
+# ------------------------------------------------------------------------------
 # In order to correct the problem of the above example we rewrite as follows
 print()
 print('DECORATORS_EXAMPLE 4')
@@ -141,7 +141,7 @@ print()
 print('Calling the function display(): ')
 display()
 
-################################################################################
+# ------------------------------------------------------------------------------
 # Using Classes as decorators
 print()
 print('DECORATORS_EXAMPLE 5')
@@ -174,7 +174,7 @@ print()
 print('Calling the function display(): ')
 display()
 
-################################################################################
+# ------------------------------------------------------------------------------
 # Practical example: A simple logger
 print()
 print('DECORATORS_EXAMPLE 6')
@@ -215,7 +215,7 @@ def display_info(name, age):
 
 display_info('Kelly', 34)
 
-################################################################################
+# ------------------------------------------------------------------------------
 # Practical example: A simple logger, stacking decorators
 print()
 print('DECORATORS_EXAMPLE 7')
@@ -262,7 +262,7 @@ print(display_info.__name__)  #Output: timer_wrapper_function
 #Here we see that the time_wrapper_function was ran, because of the decorators
 # stacking, something we do not want
 
-###########################SWITCHING DECORATORS ORDER###########################
+# --------------------------SWITCHING DECORATORS ORDER--------------------------
 print()
 print('DECORATORS_EXAMPLE 7.1')
 print()
@@ -308,7 +308,7 @@ print(display_info.__name__)  # Output: logger_wrapper_function
 # Here we see that the logger_wrapper_function was ran, because of the decorators
 # stacking, something we do not want
 
-##############################INTODUCING FUNCTOLLS##############################
+# -----------------------------INTODUCING FUNCTOLLS-----------------------------
 
 from functools import wraps
 
