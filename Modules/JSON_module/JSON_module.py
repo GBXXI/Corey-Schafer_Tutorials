@@ -53,7 +53,7 @@ new_json_string = json.dumps(data1, indent=2, sort_keys=True)
 print()
 print(new_json_string)
 
-################################################################################
+# ------------------------------------------------------------------------------
 # Importing a json file
 with open('JSON\\US_states.json') as jnf:
     data = json.load(jnf)

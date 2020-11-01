@@ -59,7 +59,7 @@ class Employee:
 
     def __len__(self):
         return len(self.fullname())
-###############################MODULARISED LOGGER###############################
+# ------------------------------MODULARISED LOGGER------------------------------
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
