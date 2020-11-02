@@ -1,5 +1,6 @@
 
 import logging
+import sys
 
 class Employee:
 
@@ -16,7 +17,9 @@ class Employee:
                         # class so every time we instantiate the class, we have
                         # the counter to pass the number.
 
-        logger.info(f'#{Employee.number_of_employees}: Created Employee: {self.firstname}-{self.lastname}')
+        logger.info(
+            f'#{Employee.number_of_employees}: Created Employee: {self.firstname}-{self.lastname}'
+        )
 
     # Creating a simple method for the Employee class.
     # We use the self argument, because every time we call this method, the
@@ -63,9 +66,16 @@ class Employee:
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
-log_format = logging.Formatter('%(asctime)s %(levelname)s\n%(funcName)s: %(message)s')
+# log_format = logging.Formatter('%(asctime)s %(levelname)s\n%(funcName)s: %(message)s')
+log_format = logging.Formatter('%(asctime)s %(levelname)s\n%(message)s')
 
-file_handler = logging.FileHandler(r'Corey Schafer_Tutorials\Modules\Logging_module\Logging_Advanced_Employee.log')
+if sys.platform.startswith('win32'):
+    file_handler = logging.FileHandler(r'Corey Schafer_Tutorials\Modules\Logging_module\
+                                        Logging_Advanced_Employee.log')
+
+elif sys.platform.startswith('linux'):
+    file_handler = logging.FileHandler("Modules/Logging_module/Logging_Advanced_Employee.log")
+
 file_handler.setFormatter(log_format)
 
 logger.addHandler(file_handler)

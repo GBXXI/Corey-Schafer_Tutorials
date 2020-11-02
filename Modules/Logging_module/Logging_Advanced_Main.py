@@ -1,6 +1,10 @@
 
 # %% markdown
-# Since every time we import a module, it is first runned, the root logger is configured by the module that gets imported first. To avoid that and also to add the functionality of different loggers, we must modularise our loggers. After that when we run our main module we can see we have a number of differnt loggers.
+# Since every time we import a module, it is first runned, the root logger is
+# configured by the module that gets imported first. To avoid that and also to
+# add the functionality of different loggers, we must modularise our loggers.
+# After that when we run our main module we can see we have a number of differnt
+# loggers.
 # %% codecell
 import logging
 from Logging_Advanced_class import Employee

@@ -1,12 +1,14 @@
 
-# %% markdown
-# Creating a simple logger in order to view how it works and how we can use it for debugging and other functions. There are five levels of logging as we see bellow:
+# %% [markdown]
+# Creating a simple logger in order to view how it works and how we can use it 
+# for debugging and other functions. There are five levels of logging as we see bellow:
 # <li>DEBUG:	Information only for problem diagnostics<br>
 # <li>INFO:	    The program is running as expected<br>
 # <li>WARNING:	Indicate something went wrong<br>
 # <li>ERROR:	The software will no longer be able to function<br>
 # <li>CRITICAL:	Very serious error<br>
-# Firstly we will import the built-in logging module and then we will create some functions for examples.
+# Firstly we will import the built-in logging module and then we will create some
+# functions for examples.
 
 # %% codecell
 import logging
@@ -23,7 +25,7 @@ def multiply(x,y):
 def divide(x,y):
     return x / y
 
-# %% markdown
+# %% [markdown]
 # Now we can print the results of our functions or we can log them on to the screen.
 # %% codecell
 num_x = 15
@@ -38,8 +40,13 @@ logging.warning(f'Multipling: {num_x} * {num_y} = {multiply_result}')
 divide_result = divide(num_x, num_y)
 logging.warning(f'Dividing: {num_x} / {num_y} = {divide_result}')
 
-# %% markdown
-# As we see in the example above, our log is set as warnings, but as we conclude by our introduction, they are not really warnings, they are info(maybe debug). So we will change our logging level, using the .basicConfig method. The logging.DEBUG attribute we pass on our method, is a constant that represents an integer as the level of our logging. We can see those values in the table that follows:<br>
+# %% [markdown]
+# As we see in the example above, our log is set as warnings, but as we conclude
+# by our introduction, they are not really warnings, they are info(maybe debug).
+# So we will change our logging level, using the .basicConfig method. The 
+# logging.DEBUG attribute we pass on our method, is a constant that represents an
+#  integer as the level of our logging. We can see those values in the table that
+#  follows:<br>
 #<li> CRITICAL: 50<br>
 #<li> ERROR: 40<br>
 #<li> WARNING: 30<br>
@@ -58,10 +65,11 @@ logging.debug(f'Multipling: {num_x} * {num_y} = {multiply_result}')
 divide_result = divide(num_x, num_y)
 logging.debug(f'Dividing: {num_x} / {num_y} = {divide_result}')
 
-# %% markdown
+# %% [markdown]
 # We can save our logs to a file by using the .basicConfig method.
 # %% codecell
-logging.basicConfig(filename=r'Corey Schafer_Tutorials\Modules\Logging_module\Logging_Basics.log', level=logging.DEBUG)
+logging.basicConfig(filename=r'Corey Schafer_Tutorials\Modules\Logging_module\
+                    Logging_Basics.log', level=logging.DEBUG)
 # %% codecell
 add_result = add(num_x, num_y)
 logging.debug(f'Adding: {num_x} + {num_y} = {add_result}')
@@ -72,12 +80,14 @@ logging.debug(f'Multipling: {num_x} * {num_y} = {multiply_result}')
 divide_result = divide(num_x, num_y)
 logging.debug(f'Dividing: {num_x} / {num_y} = {divide_result}')
 
-# %% markdown
-# Through the .basicConfig method we can also configure the format of our logs as is shown bellow. The parameters for formating are shown in the documentation: https://docs.python.org/3/library/logging.html#logrecord-attributes
+# %% [markdown]
+# Through the .basicConfig method we can also configure the format of our logs as
+# is shown bellow. The parameters for formating are shown in the documentation:
+# https://docs.python.org/3/library/logging.html#logrecord-attributes
 # %% codecell
 logging.basicConfig(filename=r'Corey Schafer_Tutorials\Modules\Logging_module\Logging_Basics.log', format="%(asctime)s\t%(levelname)s\n%(funcName)s:%(message)s", level=logging.DEBUG)
 
-# %% markdown
+# %% [markdown]
 # We can use logging with classes aswell. We can see the example with our Employee class.
 # %% codecell
 logging.basicConfig(filename=r'Corey Schafer_Tutorials\Modules\Logging_module\Logging_Basics_Employee.log', format="%(asctime)s %(levelname)s\n%(funcName)s: %(message)s", level=logging.INFO)
@@ -97,7 +107,8 @@ class Employee:
                         # class so every time we instantiate the class, we have
                         # the counter to pass the number.
 
-        logging.info(f'#{Employee.number_of_employees}: Created Employee: {self.firstname}-{self.lastname}')
+        logging.info(f'#{Employee.number_of_employees}: Created Employee: \
+                        {self.firstname}-{self.lastname}')
 
     # Creating a simple method for the Employee class.
     # We use the self argument, because every time we call this method, the
@@ -141,7 +152,7 @@ class Employee:
     def __len__(self):
         return len(self.fullname())
 
-# %% markdown
+# %% [markdown]
 # Creating instances of our class using our .from_string classmethod.
 # %% codecell
 str_employee_4 = 'Nikita-Khrushchev-140_000'
