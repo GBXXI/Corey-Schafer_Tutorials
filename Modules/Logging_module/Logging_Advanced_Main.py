@@ -37,7 +37,7 @@ logger.debug(f'Subtracting: {num_x} - {num_y} = {subtract_result}')
 multiply_result = multiply(num_x, num_y)
 logger.debug(f'Multipling: {num_x} * {num_y} = {multiply_result}')
 divide_result = divide(num_x, num_y)
-logger.debug(f'Dividing: {num_x} / {num_y} = {divide_result}')
+logger.info(f'Dividing: {num_x} / {num_y} = {divide_result}')
 # %% codecell
 str_employee_4 = 'Nikita-Khrushchev-140_000'
 str_employee_5 = 'Aleka-Papariga-85_000'
