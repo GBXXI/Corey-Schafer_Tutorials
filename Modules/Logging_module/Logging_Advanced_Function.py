@@ -21,8 +21,9 @@ logger.setLevel(logging.DEBUG)
 log_format = logging.Formatter('%(asctime)s %(name)s\n:%(message)s')
 
 if sys.platform.startswith('win32'):
-    file_handler = logging.FileHandler(r'Corey Schafer_Tutorials\Modules\Logging_module\
-                                        Logging_Advanced_Employee.log')
+    file_handler = logging.FileHandler(
+        r'Modules\Logging_module\Logging_Advanced_Employee.log'
+    )
 
 elif sys.platform.startswith('linux'):
     file_handler = logging.FileHandler("Modules/Logging_module/Logging_Advanced_Employee.log")

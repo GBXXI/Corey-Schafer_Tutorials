@@ -67,11 +67,12 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
 # log_format = logging.Formatter('%(asctime)s %(levelname)s\n%(funcName)s: %(message)s')
-log_format = logging.Formatter('%(asctime)s %(levelname)s\n%(message)s')
+log_format = logging.Formatter('%(asctime)s %(levelname)s\n%(message)s\n')
 
 if sys.platform.startswith('win32'):
-    file_handler = logging.FileHandler(r'Corey Schafer_Tutorials\Modules\Logging_module\
-                                        Logging_Advanced_Employee.log')
+    file_handler = logging.FileHandler(
+        r'Modules\Logging_module\Logging_Advanced_Employee.log'
+    )
 
 elif sys.platform.startswith('linux'):
     file_handler = logging.FileHandler("Modules/Logging_module/Logging_Advanced_Employee.log")
