@@ -10,9 +10,9 @@ class Pexample:
         self.num1 = num1
         self.num2 = num2
 
-        Pexample.tests_num += 1 # We access the counter through our
-                        # class so every time we instantiate the class, we have
-                        # the counter to pass the number.
+        Pexample.tests_num += 1 # We access the counter through our class so 
+                        # every time we instantiate the class, we have the counter
+                        # to pass the number.
         # logger.info(
         #     (
         #         f"-Test number: {Pexample.tests_num}\n" \
