@@ -16,7 +16,7 @@ def divide(x,y):
 
 # ------------------------------MODULARISED LOGGER------------------------------
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)
+logger.setLevel(logging.DEBUG)
 
 log_format = logging.Formatter('%(asctime)s %(name)s\n:%(message)s')
 

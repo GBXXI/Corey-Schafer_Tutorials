@@ -12,6 +12,7 @@
 
 # %% codecell
 import logging
+import sys
 # %% codecell
 def add(x,y):
     return x + y
@@ -68,8 +69,12 @@ logging.debug(f'Dividing: {num_x} / {num_y} = {divide_result}')
 # %% [markdown]
 # We can save our logs to a file by using the .basicConfig method.
 # %% codecell
-logging.basicConfig(filename=r'Corey Schafer_Tutorials\Modules\Logging_module\
-                    Logging_Basics.log', level=logging.DEBUG)
+if sys.platform.startswith('win32'):
+    logging.basicConfig(filename=r'Corey Schafer_Tutorials\Modules\Logging_module\
+                        Logging_Basics.log', level=logging.DEBUG)
+
+elif sys.platform.startswith('linux'):
+    logging.basicConfig(filename="Modules/Logging_module/Logging_Basics.log", level=logging.DEBUG)
 # %% codecell
 add_result = add(num_x, num_y)
 logging.debug(f'Adding: {num_x} + {num_y} = {add_result}')
@@ -85,12 +90,21 @@ logging.debug(f'Dividing: {num_x} / {num_y} = {divide_result}')
 # is shown bellow. The parameters for formating are shown in the documentation:
 # https://docs.python.org/3/library/logging.html#logrecord-attributes
 # %% codecell
-logging.basicConfig(filename=r'Corey Schafer_Tutorials\Modules\Logging_module\Logging_Basics.log', format="%(asctime)s\t%(levelname)s\n%(funcName)s:%(message)s", level=logging.DEBUG)
+if sys.platform.startswith('win32'):
+    logging.basicConfig(filename=r'Corey Schafer_Tutorials\Modules\Logging_module\Logging_Basics.log', format="%(asctime)s\t%(levelname)s\n%(funcName)s:%(message)s", level=logging.DEBUG)
+
+elif sys.platform.startswith('linux'):
+    logging.basicConfig(filename="Modules/Logging_module/Logging_Basics.log", format="%(asctime)s\t%(levelname)s\n%(funcName)s:%(message)s", level=logging.DEBUG)
 
 # %% [markdown]
 # We can use logging with classes aswell. We can see the example with our Employee class.
 # %% codecell
-logging.basicConfig(filename=r'Corey Schafer_Tutorials\Modules\Logging_module\Logging_Basics_Employee.log', format="%(asctime)s %(levelname)s\n%(funcName)s: %(message)s", level=logging.INFO)
+if sys.platform.startswith('win32'):
+    logging.basicConfig(filename=r'Corey Schafer_Tutorials\Modules\Logging_module\Logging_Basics_Employee.log', format="%(asctime)s %(levelname)s\n%(funcName)s: %(message)s", level=logging.INFO)
+
+elif sys.platform.startswith('linux'):
+    logging.basicConfig(filename="Modules/Logging_module/Logging_Basics_Employee.log", format="%(asctime)s %(levelname)s\n%(funcName)s: %(message)s", level=logging.INFO)
+    
 # %% codecell
 class Employee:
 

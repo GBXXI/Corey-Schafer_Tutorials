@@ -25,3 +25,4 @@ Modules\Unittest_module\__pycache__
 Pipfile
 Pipfile.lock
 Modules/PIL_module/Images
+.offline_videos
