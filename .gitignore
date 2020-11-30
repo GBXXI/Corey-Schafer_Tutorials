@@ -6,6 +6,7 @@
 *.pdf
 *.json
 *.txt
+!requirements.txt
 *.pyc
 *.png
 *.jpg
