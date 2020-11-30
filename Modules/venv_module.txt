@@ -14,7 +14,7 @@ Works for version 3.4 and higher
             - project_env: is the virtual's environment's name
 
 
-# Creating a new virtual enviroment with access to the global packages:
+# Creating a new virtual environment with access to the global packages:
 - Inside the folder we want to create the virtual environment
     on the command prompt, we type:
 
@@ -37,39 +37,39 @@ Works for version 3.4 and higher
 - Now the command prompt is:
     (project_env) D:\Test GB Python\Corey Schafer_Tutorials>
 
-    With the above command prompt, anything we installl with pip, is installed
-to this enviroment only.
+    With the above command prompt, anything we install with pip, is installed
+to this environment only.
 
-# Extracting the enviroment's requirements.
--Inside our virtual enviroment we give the command:
+# Extracting the environment's requirements.
+-Inside our virtual environment we give the command:
 
     (project_env) D:\Test GB Python\Corey Schafer_Tutorials>pip freeze
 
         copying all the modules name and version and putting them inside a
         requirements.txt file
 
-# Deactivating the virtual enviroment:
+# Deactivating the virtual environment:
 
     (project_env) D:\Test GB Python\Corey Schafer_Tutorials>deactivate
 
 - Now the command prompt is:
         D:\Test GB Python\Corey Schafer_Tutorials>
 
-# Deleting a virtual enviroment:
+# Deleting a virtual environment:
 -Inside the project's folder we give the command:
 
     D:\Test GB Python\Corey Schafer_Tutorials>rmdir project_env /s
 
         where:
-            -project_env: is our virtual enviroment's name\file
+            -project_env: is our virtual environment's name\file
 
-# Installing packages for a virtual enviroment from requirements.txt:
--Inside our virtual enviroment we give the command:
+# Installing packages for a virtual environment from requirements.txt:
+-Inside our virtual environment we give the command:
 
     (project_env) D:\Test GB Python\Corey Schafer_Tutorials>pip install -r requirements.txt
 
-# Accessing our virtual enviroment's specific packages:
--Inside our virtual enviroment we give the command:
+# Accessing our virtual environment's specific packages:
+-Inside our virtual environment we give the command:
 
  (project_env) D:\Test GB Python\Corey Schafer_Tutorials>pip list --local
 

@@ -5,10 +5,10 @@ import requests as rq
 ########################PARSING HTML FROM A LOCAL SOURCE########################
 
 # First we get our files encoding
-enc = open('D:\\Test GB Python\\Corey Schafer_Tutorials\Web_scraping\\CoreyMS - Development, Design, DIY, and more.html', 'r',).encoding
+enc = open(r'D:\GBXXI\PROGRAMMING\GB_Python\CoreySchafer_Tutorials\Modules\bs4_module(Beautiful Soup)\CoreyMS - Development, Design, DIY, and more.html', 'r',).encoding
 
 # We open the file and create a BeautifulSoup object
-with open('D:\\Test GB Python\\Corey Schafer_Tutorials\Web_scraping\\CoreyMS - Development, Design, DIY, and more.html', 'r', encoding=f'{enc}', errors='ignore') as html_file:
+with open(r'D:\GBXXI\PROGRAMMING\GB_Python\CoreySchafer_Tutorials\Modules\bs4_module(Beautiful Soup)\CoreyMS - Development, Design, DIY, and more.html', 'r', encoding=f'{enc}', errors='ignore') as html_file:
 
     soup = bs4.BeautifulSoup(html_file, 'lxml')  # BeautifulSoup object with 'lxml' parser
 

@@ -15,7 +15,7 @@ def do_something():
     time.sleep(1)
     print("Done Sleeping..")
 
-do_something()    
+do_something()
 do_something()
 
 finish = time_()
@@ -31,7 +31,7 @@ def do_something_thread():
     time.sleep(1)
     print("Done Sleeping..")
 
-thread_1 = threading.Thread(target=do_something_thread)    
+thread_1 = threading.Thread(target=do_something_thread)
 thread_2 = threading.Thread(target=do_something_thread)
 
 thread_1.start()
@@ -54,7 +54,7 @@ for _ in range(10):
     thread_1 = threading.Thread(target=do_something_thread)
     thread_1.start()
     threads.append(thread_1)
-    
+
 for thread in threads:
     thread.join()
 

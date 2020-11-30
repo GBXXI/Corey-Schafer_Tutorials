@@ -5,8 +5,6 @@
 *.tsv
 *.pdf
 *.json
-*.html
-*.css
 *.txt
 *.pyc
 *.png
@@ -18,11 +16,12 @@
 .ipynb_checkpoints
 # Files
 .vscode
-Libraries/Pandas/Jupyter Testing and config.ipynb 
-Modules/bs4_module(Beautiful Soup)/CoreyMS - Development, Design, DIY, and more_files/
-Modules\Unittest_module\__pycache__
 .venv
-Pipfile
-Pipfile.lock
+Libraries/Pandas/Jupyter Testing and config.ipynb
+Libraries/Django/CoreySchafer_tutorial/.Sources
+Modules/bs4_module(Beautiful Soup)/CoreyMS - Development, Design, DIY, and more_files/
+Modules/Unittest_module/__pycache__
 Modules/PIL_module/Images
 .offline_videos
+Pipfile
+Pipfile.lock

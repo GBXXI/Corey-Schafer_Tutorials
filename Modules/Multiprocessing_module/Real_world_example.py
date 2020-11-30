@@ -77,5 +77,3 @@ if __name__ == "__main__":
         print(f"Finished in {finish-start} second('s)")
     except Exception:
         pass
-    # finally:
-    atexit.register(goodbye)
