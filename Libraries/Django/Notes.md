@@ -212,7 +212,7 @@ django, we use the **"{% %}"** block and in order to access variables the **"{{ 
 
     <body>
         {% for post in posts %}
-            <h1>{{ post.tile }}</h1>
+            <h1>{{ post.title }}</h1>
             <p>
                 By {{ post.author }} on {{ post.date_posted }}
             </p>
@@ -270,7 +270,7 @@ child templates are permitted to override.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         {% if title %}
-        <title>Django - {{ title }}</title>
+            <title>Django - {{ title }}</title>
         {% else %}
             <title>Django - Default</title>
         {% endif %}
@@ -427,7 +427,7 @@ D:\DjangoProject> python manage.py shell
 Python 3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
 >>> from <Apps Name>.models import Post
->>> from django.contib.auth.models import User
+>>> from django.contrib.auth.models import User
 ```
 The second is by creating a "standalone" module inside our <App's Name> folder:
 ```python

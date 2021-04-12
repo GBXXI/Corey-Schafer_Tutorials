@@ -18,6 +18,8 @@
 # Files
 .vscode
 .venv
+.env
+__pycache__
 Libraries/Pandas/Jupyter Testing and config.ipynb
 Libraries/Django/CoreySchafer_tutorial/.Sources
 Modules/bs4_module(Beautiful Soup)/CoreyMS - Development, Design, DIY, and more_files/
