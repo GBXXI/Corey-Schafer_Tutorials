@@ -13,7 +13,7 @@
             integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
         <link rel="stylesheet" type="text/css" href="{% static 'blog/main.css' %}">
-        
+
         {% if title %}
         <title>Django Blog- {{ title }}</title>
         {% else %}
@@ -64,6 +64,7 @@
                     {% block content %}
                     {% endblock %}
                 </div>
+                
                 <div class="col-md-4">
                     <div class="content-section">
                         <h3>Our Sidebar</h3>

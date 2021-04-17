@@ -37,3 +37,4 @@ p_df.iloc[[0,1], 1]  # The first list is our rows and the second is our columns,
 p_df.loc[[0,1], 'email']  # With loc we can pass columns name
 # %% codecell
 p_df.loc[[0,1], ['email', 'last']]  # With loc we can pass columns name
+

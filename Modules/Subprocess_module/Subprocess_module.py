@@ -65,15 +65,15 @@ with open('output.txt', 'w+') as file:
     process_1 = subprocess.run(['dir'], shell=True, stdout=file, text=True)
 
 # %% [markdown]
-# Capturing an error on our subprocess.    
+# Capturing an error on our subprocess.
 
 # %% [codecell]
-process_1 = subprocess.run(['dir', 'json'], shell=True, capture_output=True, text=True)
+process_2 = subprocess.run(['dir', 'json'], shell=True, capture_output=True, text=True)
 
-print(process_1.stderr)
+print(process_2.stderr)
 
 # %% [markdown]
-# That is useful if we want to perform an operation if our subprocess is 
+# That is useful if we want to perform an operation if our subprocess is
 # successful.
 
 # %% [codecell]
@@ -98,7 +98,7 @@ print(process_1)
 # to be used.
 
 # %% [codecell]
-process_1 = subprocess.run(["powershell","cat", "output_1.txt"], shell=True, 
+process_1 = subprocess.run(["powershell","cat", "output_1.txt"], shell=True,
                             capture_output=True, text=True)
 print(process_1.stdout)
 print(2*'\n')
@@ -106,7 +106,7 @@ print(2*'\n')
 process_2 = subprocess. run(["powershell", "grep", "test3"],
                             capture_output=True, text=True, input=process_1.stdout)
 
-print(process_2.stderr)                            
+print(process_2.stderr)
 
 # %% [codecell]
 

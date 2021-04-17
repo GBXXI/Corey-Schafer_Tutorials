@@ -55,7 +55,7 @@ print(new_json_string)
 
 # ------------------------------------------------------------------------------
 # Importing a json file
-with open('JSON\\US_states.json') as jnf:
+with open('Modules\\JSON_module\\US_states.json') as jnf:
     data = json.load(jnf)
 
 # We can see from our json file that there is a 'states' key. So we use it in
@@ -70,5 +70,5 @@ for state in data['states']:
     del state['area_codes']
 
 # Now we can create new file with our new data
-with open('JSON\\n_US_states.json', 'w+') as njsf:
+with open('Modules\\JSON_module\\n_US_states.json', 'w+') as njsf:
     json.dump(data, njsf, indent=2)

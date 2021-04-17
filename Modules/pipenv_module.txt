@@ -9,7 +9,7 @@ Virtual Environments
     D:\GBXXI\PROGRAMMING\GB_Python\Corey Schafer_Tutorials\Modules> pipenv install
 
         note:
-            - If we already have a pipenv file in that folder, this command will recreate the virtual enviroment described in the aforementioned file.
+            - If we already have a pipenv file in that folder, this command will recreate the virtual environment described in the aforementioned file.
 
 # Activating a virtual environment:
 - Inside the folder we want to create the virtual environment
@@ -18,7 +18,7 @@ Virtual Environments
     D:\GBXXI\PROGRAMMING\GB_Python\Corey Schafer_Tutorials\Modules> pipenv shell
 
         where:
-            -This command, opens a sub-shell for us to work on our virtual enviroment.
+            -This command, opens a sub-shell for us to work on our virtual environment.
 
 # Deactivating a virtual environment:
 - Inside the folder we want to create the virtual environment
@@ -27,65 +27,65 @@ Virtual Environments
     D:\GBXXI\PROGRAMMING\GB_Python\Corey Schafer_Tutorials\Modules> exit
 
         where:
-            -This command, closes the sub-shell for we used to work on our virtual enviroment.
+            -This command, closes the sub-shell for we used to work on our virtual environment.
 
-# Running commands to our virtual enviroment without activating it.
+# Running commands to our virtual environment without activating it.
 - Inside the folder we want to create the virtual environment
     on the command prompt, we type:
 
     D:\GBXXI\PROGRAMMING\GB_Python\Corey Schafer_Tutorials\Modules> pipenv run python
 
         where:
-            -The virtual's enviroment python interpreter is launched.
+            -The virtual's environment python interpreter is launched.
 
-# Installing packages for a virtual enviroment from requirements.txt:
--Inside our virtual enviroment we give the command:
+# Installing packages for a virtual environment from requirements.txt:
+-Inside our virtual environment we give the command:
 
     (project_env) D:\Test GB Python\Corey Schafer_Tutorials> pipenv install -r requirements.txt
 
-# Extracting the enviroment's requirements.
--Inside our virtual enviroment we give the command:
+# Extracting the environment's requirements.
+-Inside our virtual environment we give the command:
 
     (project_env) D:\Test GB Python\Corey Schafer_Tutorials>pipenv lock -r
 
         copying all the modules name and version and putting them inside a
         requirements.txt file
 
-# Installing packages in a dev enviroment.
--Inside our virtual enviroment we give the command:
+# Installing packages in a dev environment.
+-Inside our virtual environment we give the command:
 
     (project_env) D:\Test GB Python\Corey Schafer_Tutorials>pipenv install pytest --dev
 
 # Removing installed packages.
--Inside our virtual enviroment we give the command:
+-Inside our virtual environment we give the command:
 
     (project_env) D:\Test GB Python\Corey Schafer_Tutorials>pipenv uninstall pytest
 
-# Deleting a virtual enviroment:
+# Deleting a virtual environment:
 -Inside the project's folder we give the command:
 
     (project_env) D:\Test GB Python\Corey Schafer_Tutorials>pipenv --rm
 
 # Checking for package security.
--Inside our virtual enviroment we give the command:
+-Inside our virtual environment we give the command:
 
     (project_env) D:\Test GB Python\Corey Schafer_Tutorials>pipenv check
 
 # Display a dependency graph of our packages.
--Inside our virtual enviroment we give the command:
+-Inside our virtual environment we give the command:
 
     (project_env) D:\Test GB Python\Corey Schafer_Tutorials>pipenv graph
 
-# Updating our deterministic virtual enviroment file, pipfile.lock.
--Inside our virtual enviroment we give the command:
+# Updating our deterministic virtual environment file, pipfile.lock.
+-Inside our virtual environment we give the command:
 
     (project_env) D:\Test GB Python\Corey Schafer_Tutorials>pipenv lock
 
-# Creating an enviroment from our deterministic file.
--Inside our virtual enviroment we give the command:
+# Creating an environment from our deterministic file.
+-Inside our virtual environment we give the command:
 
     (project_env) D:\Test GB Python\Corey Schafer_Tutorials>pipenv install --ignore-pipfile
 
-# Setting enviroment variables inside our virtual enviroment.
--Inside our virtual enviroment directory we create a
-.env file and in that file we edit the enviroment variables we want accessable from our virtual enviroment.
+# Setting environment variables inside our virtual environment.
+-Inside our virtual environment directory we create a
+.env file and in that file we edit the environment variables we want accessable from our virtual environment.

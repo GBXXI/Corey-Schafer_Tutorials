@@ -6,7 +6,6 @@
 *.pdf
 *.json
 *.txt
-!requirements.txt
 *.pyc
 *.png
 *.jpg
@@ -21,8 +20,13 @@
 Libraries/Pandas/Jupyter Testing and config.ipynb
 Libraries/Django/CoreySchafer_tutorial/.Sources
 Modules/bs4_module(Beautiful Soup)/CoreyMS - Development, Design, DIY, and more_files/
-Modules/Unittest_module/__pycache__
+__pycache__/
 Modules/PIL_module/Images
 .offline_videos
 Pipfile
 Pipfile.lock
+.env
+# Exceptions
+!requirements.txt
+!pipenv_module.txt
+!venv_module.txt

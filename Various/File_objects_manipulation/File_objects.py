@@ -38,7 +38,7 @@ with open('D:\\GBXXI\\Software_Tests\\Test GB Python\\Corey Schafer_Tutorials\\F
 # %% markdown
 # Use the .readlines method, which will return a list with all the content of our file.
 # %% codecell
-with open('D:\\GBXXI\\Software_Tests\\Test GB Python\\Corey Schafer_Tutorials\\File_objects_manipulation\\Fl_obj.txt', 'r+') as file_obj:
+with open(r'D:\GBXXI\PROGRAMMING\GB_Python\CoreySchafer_Tutorials\Various\File_objects_manipulation\Fl_obj.txt', 'r+') as file_obj:
 
     file_obj_cont = file_obj.readlines()
     print(file_obj_cont)
