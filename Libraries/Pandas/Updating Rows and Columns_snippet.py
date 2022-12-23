@@ -53,7 +53,7 @@ p_df.loc[2, ['LastName', 'E-mail']] = ["Smithen", "JohnSmithen@company.com"]
 # %% codecell
 # Updating a column
 # Returned as a view
-p_df['email'].str.lower()
+p_df['E-mail'].str.lower()
 
 # %% codecell
 # Updating permanently
